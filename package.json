@@ -37,6 +37,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
+    "method-override": "^3.0.0",
     "mongoose": "^5.9.27",
     "mongoose-slug-generator": "^1.0.4"
   },
