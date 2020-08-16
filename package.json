@@ -39,6 +39,7 @@
     "express-handlebars": "^5.1.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.9.27",
+    "mongoose-delete": "^0.5.2",
     "mongoose-slug-generator": "^1.0.4"
   },
   "devDependencies": {
