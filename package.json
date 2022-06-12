@@ -6,28 +6,25 @@
   "scripts": {
     "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+    "watch": "node-sass -w src/resources/scss -o src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sondnpt00343/nodejs_blog.git"
+    "url": "git+https://github.com/ngohuule16012000/nodejs_blog.git"
   },
   "keywords": [
-    "f8",
     "blog",
-    "f8",
-    "nodejs",
     "nodejs"
   ],
-  "author": "sondn",
+  "author": "ngohuule",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sondnpt00343/nodejs_blog/issues"
+    "url": "https://github.com/ngohuule16012000/nodejs_blog/issues"
   },
-  "homepage": "https://github.com/sondnpt00343/nodejs_blog#readme",
+  "homepage": "https://github.com/ngohuule16012000/nodejs_blog#readme",
   "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    "src//**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 2 --write"
   },
   "husky": {
     "hooks": {
@@ -35,19 +32,20 @@
     }
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
     "method-override": "^3.0.0",
-    "mongoose": "^5.9.27",
-    "mongoose-delete": "^0.5.2",
-    "mongoose-slug-generator": "^1.0.4"
+    "mongoose": "^6.3.6",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-sequence": "^5.3.1",
+    "mongoose-slug-generator": "^1.0.4",
+    "nodemon": "^2.0.16"
   },
   "devDependencies": {
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
     "morgan": "^1.10.0",
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
-    "prettier": "^2.0.5"
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.2"
   }
 }
